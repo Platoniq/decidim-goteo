@@ -22,10 +22,11 @@ gem "faker", "~> 2.14"
 
 gem "wicked_pdf", "~> 2.1"
 
-gem 'sidekiq'
+gem "sidekiq"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
+  gem "rubocop-faker"
 
   gem "brakeman"
   gem "decidim-dev", "0.27.2"
@@ -48,6 +49,6 @@ group :development do
 end
 
 group :production do
-  gem 'aws-sdk-s3', require: false
+  gem "aws-sdk-s3", require: false
   gem "figaro", "~> 1.2"
 end
