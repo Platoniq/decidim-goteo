@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/Platoniq/decidim-module-goteo_oauth
+  revision: e25c01f5dba3849a51102c52875691dea7b70922
+  branch: main
+  specs:
+    decidim-goteo_oauth (0.0.1)
+      decidim-core (> 0.26)
+
+GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
   revision: a5fb3423cb09379e2cbf40e001e44325834b31c2
   branch: main
@@ -583,8 +591,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
-    nokogiri (1.13.6-arm64-darwin)
-      racc (~> 1.4)
     oauth (1.1.0)
       oauth-tty (~> 1.0, >= 1.0.1)
       snaky_hash (~> 2.0)
@@ -894,6 +900,7 @@ DEPENDENCIES
   decidim (= 0.27.2)
   decidim-decidim_awesome!
   decidim-dev (= 0.27.2)
+  decidim-goteo_oauth!
   decidim-term_customizer!
   faker (~> 2.14)
   figaro (~> 1.2)
