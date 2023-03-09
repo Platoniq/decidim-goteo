@@ -478,6 +478,17 @@ if Decidim.module_installed? :elections
   end
 end
 
+if defined?(Decidim::GoteoOauth)
+  Decidim::GoteoOauth.oauth_scope = :TEST
+  Decidim::GoteoOauth.oauth_client_options = {
+    site: Rails.application.secrets.omniauth[:goteo][:app_url],
+    authorize_url: "/authorize",
+    user_info_url: "/userInfo",
+    token_url: "/token",
+    response_type: "authorization_code"
+  }
+end
+
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
 
