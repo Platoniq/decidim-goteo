@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-goteo_oauth
-  revision: 895e4f97e86fcfbf9a2aa2d0335612494bdb97f5
+  revision: 95fa960cb49e79adf970db4a92d36663b886fb16
   branch: main
   specs:
     decidim-goteo_oauth (0.0.1)
