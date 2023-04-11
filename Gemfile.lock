@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/Platoniq/decidim-module-alternative_landing
+  revision: 896b49d4b40111adbee971cbe8fda4c0047d3fbc
+  branch: main
+  specs:
+    decidim-alternative_landing (0.4.0)
+      decidim-admin (>= 0.27.0, < 0.28)
+      decidim-core (>= 0.27.0, < 0.28)
+      redcarpet (~> 3.4)
+
+GIT
   remote: https://github.com/Platoniq/decidim-module-goteo_oauth
   revision: 773773d9976ae168bbda3a8d202c323408e3dc62
   branch: main
@@ -898,6 +908,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano-sidekiq
   decidim (= 0.27.2)
+  decidim-alternative_landing!
   decidim-decidim_awesome!
   decidim-dev (= 0.27.2)
   decidim-goteo_oauth!
