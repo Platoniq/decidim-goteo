@@ -53,4 +53,5 @@ end
 group :production do
   gem "aws-sdk-s3", require: false
   gem "figaro", "~> 1.2"
+  gem "whenever"
 end
