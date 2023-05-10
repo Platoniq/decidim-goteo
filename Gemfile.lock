@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-goteo_oauth
-  revision: 773773d9976ae168bbda3a8d202c323408e3dc62
+  revision: 895e4f97e86fcfbf9a2aa2d0335612494bdb97f5
   branch: main
   specs:
     decidim-goteo_oauth (0.0.1)
@@ -934,3 +934,4 @@ RUBY VERSION
 
 BUNDLED WITH
    2.4.12
+
