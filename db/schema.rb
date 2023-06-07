@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_03_124221) do
+ActiveRecord::Schema.define(version: 2023_06_07_093430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1156,6 +1156,37 @@ ActiveRecord::Schema.define(version: 2023_03_03_124221) do
     t.index ["privatable_to_type", "privatable_to_id"], name: "space_privatable_to_privatable_id"
   end
 
+  create_table "decidim_peertube_users", force: :cascade do |t|
+    t.bigint "decidim_user_id"
+    t.integer "peertube_uid"
+    t.integer "peertube_account_id"
+    t.string "peertube_username"
+    t.string "access_token"
+    t.datetime "access_token_expires_at"
+    t.integer "peertube_role"
+    t.string "peertube_role_label"
+    t.jsonb "account"
+    t.jsonb "video_channels"
+    t.jsonb "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["decidim_user_id"], name: "index_decidim_peertube_users_on_user"
+  end
+
+  create_table "decidim_peertube_videos", force: :cascade do |t|
+    t.bigint "decidim_component_id"
+    t.bigint "decidim_peertube_user_id"
+    t.string "peertube_video_id"
+    t.integer "peertube_channel_id"
+    t.string "video_url"
+    t.string "rtmp_url"
+    t.jsonb "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["decidim_component_id"], name: "index_decidim_peertube_videos_on_component"
+    t.index ["decidim_peertube_user_id"], name: "index_decidim_peertube_videos_on_decidim_peertube_user"
+  end
+
   create_table "decidim_proposals_collaborative_draft_collaborator_requests", force: :cascade do |t|
     t.bigint "decidim_proposals_collaborative_draft_id", null: false
     t.bigint "decidim_user_id", null: false
@@ -1406,6 +1437,23 @@ ActiveRecord::Schema.define(version: 2023_03_03_124221) do
     t.index ["mounted_engine_name"], name: "index_decidim_short_links_on_mounted_engine_name"
     t.index ["route_name"], name: "index_decidim_short_links_on_route_name"
     t.index ["target_type", "target_id"], name: "index_decidim_short_links_on_target"
+  end
+
+  create_table "decidim_social_crowdfunding_campaigns", force: :cascade do |t|
+    t.bigint "decidim_organization_id"
+    t.jsonb "name"
+    t.jsonb "description"
+    t.string "slug"
+    t.string "url"
+    t.string "lang"
+    t.string "thumbnail_url"
+    t.decimal "amount"
+    t.decimal "minimum"
+    t.decimal "optimum"
+    t.jsonb "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["decidim_organization_id"], name: "index_social_crowdfunding_campaigns_on_organization"
   end
 
   create_table "decidim_sortitions_sortitions", force: :cascade do |t|
@@ -1726,6 +1774,9 @@ ActiveRecord::Schema.define(version: 2023_03_03_124221) do
   add_foreign_key "decidim_participatory_processes", "decidim_organizations"
   add_foreign_key "decidim_participatory_processes", "decidim_participatory_process_types"
   add_foreign_key "decidim_participatory_processes", "decidim_scope_types"
+  add_foreign_key "decidim_peertube_users", "decidim_users"
+  add_foreign_key "decidim_peertube_videos", "decidim_components"
+  add_foreign_key "decidim_peertube_videos", "decidim_peertube_users"
   add_foreign_key "decidim_reminder_deliveries", "decidim_reminders"
   add_foreign_key "decidim_reminder_records", "decidim_reminders"
   add_foreign_key "decidim_reminders", "decidim_components"
@@ -1734,6 +1785,7 @@ ActiveRecord::Schema.define(version: 2023_03_03_124221) do
   add_foreign_key "decidim_scopes", "decidim_organizations"
   add_foreign_key "decidim_scopes", "decidim_scope_types", column: "scope_type_id"
   add_foreign_key "decidim_scopes", "decidim_scopes", column: "parent_id"
+  add_foreign_key "decidim_social_crowdfunding_campaigns", "decidim_organizations"
   add_foreign_key "decidim_static_pages", "decidim_organizations"
   add_foreign_key "decidim_term_customizer_constraints", "decidim_organizations"
   add_foreign_key "decidim_term_customizer_constraints", "decidim_term_customizer_translation_sets", column: "translation_set_id"
