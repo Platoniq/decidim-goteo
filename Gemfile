@@ -4,12 +4,12 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.27.2"
-# gem "decidim-conferences", "0.27.2"
-# gem "decidim-consultations", "0.27.2"
-# gem "decidim-elections", "0.27.2"
-# gem "decidim-initiatives", "0.27.2"
-# gem "decidim-templates", "0.27.2"
+gem "decidim", "0.27.3"
+# gem "decidim-conferences", "0.27.3"
+# gem "decidim-consultations", "0.27.3"
+# gem "decidim-elections", "0.27.3"
+# gem "decidim-initiatives", "0.27.3"
+# gem "decidim-templates", "0.27.3"
 
 gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-module-alternative_landing", branch: "main"
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
@@ -33,7 +33,7 @@ group :development, :test do
   gem "rubocop-faker"
 
   gem "brakeman"
-  gem "decidim-dev", "0.27.2"
+  gem "decidim-dev", "0.27.3"
 end
 
 group :development do
