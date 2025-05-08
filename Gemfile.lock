@@ -10,16 +10,16 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-goteo_oauth
-  revision: 85841f1596c4397fc56a6ff3cec1760fa716247e
-  branch: deps/update-decidim-0.28
+  revision: 7a55a160f83b7d29c6b05e5e1643dfb959fa0bac
+  branch: main
   specs:
     decidim-goteo_oauth (0.0.2)
       decidim-core (> 0.28)
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-peertube
-  revision: 0c224eaa683d2f13a8c9dd02e1a8dd0b73da2aff
-  branch: deps/update-decidim-0.28
+  revision: 9f223f10794fee6dc04d9d65458f5dfc5317c6be
+  branch: main
   specs:
     decidim-peertube (0.3.0)
       decidim-admin (>= 0.28.0, < 0.29)
