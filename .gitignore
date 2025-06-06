@@ -61,3 +61,10 @@ config/deploy*
 
 public/sw.js
 public/sw.js.map
+
+.idea/
+.tool-versions
+
+# Backup files
+*.bak
+config/initializers/*.bak

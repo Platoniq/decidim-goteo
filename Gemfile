@@ -2,21 +2,22 @@
 
 source "https://rubygems.org"
 
-ruby RUBY_VERSION
+ruby "3.2.2"
 
-gem "decidim", "0.28.5"
-# gem "decidim-conferences", "0.27.3"
-# gem "decidim-consultations", "0.27.3"
-# gem "decidim-elections", "0.27.3"
-# gem "decidim-initiatives", "0.27.3"
-# gem "decidim-templates", "0.27.3"
+gem "decidim", "0.29.4" # Usar la última versión estable
+# gem "decidim-conferences", "0.29.4"
+# gem "decidim-consultations", "0.29.4"
+# gem "decidim-initiatives", "0.29.4"
+# gem "decidim-templates", "0.29.4"
 
-gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-module-alternative_landing", branch: "release/0.28-stable"
+gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-module-alternative_landing", branch: "main"
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
-gem "decidim-goteo_oauth", git: "https://github.com/Platoniq/decidim-module-goteo_oauth", branch: "main"
-gem "decidim-peertube", git: "https://github.com/Platoniq/decidim-module-peertube", branch: "main"
 gem "decidim-social_crowdfunding", git: "https://github.com/Platoniq/decidim-module-social_crowdfunding", branch: "main"
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "main"
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "master"
+
+# ⚠️ MODULES UNDER DEVELOPMENT
+# gem "decidim-goteo_oauth", git: "https://github.com/Platoniq/decidim-module-goteo_oauth", branch: "main"
+# gem "decidim-peertube", git: "https://github.com/Platoniq/decidim-module-peertube", branch: "main"
 
 gem "bootsnap", "~> 1.3"
 
@@ -33,7 +34,7 @@ group :development, :test do
   gem "rubocop-faker"
 
   gem "brakeman"
-  gem "decidim-dev", "0.28.5"
+  gem "decidim-dev", "0.29.4"
 end
 
 group :development do
