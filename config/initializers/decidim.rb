@@ -483,3 +483,14 @@ Rails.application.config.i18n.default_locale = Decidim.default_locale
 
 # Inform Decidim about the assets folder
 Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)
+
+if defined?(Decidim::GoteoOauth)
+  Decidim::GoteoOauth.oauth_scope = :email
+  Decidim::GoteoOauth.oauth_client_options = {
+    site: ENV["OMNIAUTH_GOTEO_APP_URL"] || "https://oauth-live.deploy.goteo.org",
+    authorize_url: ":locale/authorize",
+    user_info_url: "userInfo",
+    token_url: ":locale/token",
+    response_type: "authorization_code"
+  }
+end

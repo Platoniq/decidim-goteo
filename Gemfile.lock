@@ -9,6 +9,14 @@ GIT
       redcarpet (~> 3.4)
 
 GIT
+  remote: https://github.com/Platoniq/decidim-module-goteo_oauth
+  revision: 8c92d9fba9264480dee4fae91c3a2eb1ad171213
+  branch: main
+  specs:
+    decidim-goteo_oauth (0.0.3)
+      decidim-core (>= 0.29)
+
+GIT
   remote: https://github.com/Platoniq/decidim-module-social_crowdfunding
   revision: 13e86c045c907a0292dc33a83009ef6b2370688d
   branch: main
@@ -907,6 +915,7 @@ DEPENDENCIES
   decidim-alternative_landing!
   decidim-decidim_awesome!
   decidim-dev (= 0.29.4)
+  decidim-goteo_oauth!
   decidim-social_crowdfunding!
   decidim-term_customizer!
   faker
