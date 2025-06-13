@@ -488,9 +488,9 @@ if defined?(Decidim::GoteoOauth)
   Decidim::GoteoOauth.oauth_scope = :email
   Decidim::GoteoOauth.oauth_client_options = {
     site: ENV["OMNIAUTH_GOTEO_APP_URL"] || "https://oauth-live.deploy.goteo.org",
-    authorize_url: "/es/authorize",
-    user_info_url: "/userInfo",
-    token_url: "/es/token",
+    authorize_url: ":locale/authorize",
+    user_info_url: "userInfo",
+    token_url: ":locale/token",
     response_type: "authorization_code"
   }
 end
