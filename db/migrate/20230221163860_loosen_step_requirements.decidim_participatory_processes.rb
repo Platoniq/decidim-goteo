@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-# This migration comes from decidim_participatory_processes (originally 20170116135237)
 
+# This migration comes from decidim_participatory_processes (originally 20170116135237)
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-10 12:51:12 UTC
 class LoosenStepRequirements < ActiveRecord::Migration[5.0]
   def change
     change_column_null(:decidim_participatory_process_steps, :short_description, true)

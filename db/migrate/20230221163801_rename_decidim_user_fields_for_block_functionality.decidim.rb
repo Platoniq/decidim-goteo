@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-# This migration comes from decidim (originally 20201218145252)
 
+# This migration comes from decidim (originally 20201218145252)
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-10 12:51:12 UTC
 class RenameDecidimUserFieldsForBlockFunctionality < ActiveRecord::Migration[5.2]
   def change
     rename_column :decidim_users, :suspended, :blocked

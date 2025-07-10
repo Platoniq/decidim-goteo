@@ -7,7 +7,7 @@ on:
   pull_request:
 
 env:
-  RUBY_VERSION: 3.2.2
+  RUBY_VERSION: 3.3.4
   NODE_VERSION: 20.x
 
 jobs:
@@ -40,8 +40,10 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
-      - run: |
-          sudo apt install imagemagick
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
 
       - name: Setup & create Database
         run: |
@@ -61,7 +63,7 @@ jobs:
           DATABASE_PASSWORD: postgres
 
       - name: Run RSpec
-        run: SIMPLECOV=1 bundle exec rspec
+        run: SIMPLECOV=1 bundle exec rspec --exclude-pattern "spec/system/awesome_tests_spec.rb"
         env:
           RAILS_ENV: test
           DATABASE_USERNAME: postgres

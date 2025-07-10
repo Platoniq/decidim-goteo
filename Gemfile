@@ -2,19 +2,21 @@
 
 source "https://rubygems.org"
 
-ruby "3.2.2"
+DECIDIM_VERSION = "0.30.0"
 
-gem "decidim", "0.29.4" # Usar la última versión estable
-# gem "decidim-conferences", "0.29.4"
-# gem "decidim-consultations", "0.29.4"
-# gem "decidim-initiatives", "0.29.4"
-# gem "decidim-templates", "0.29.4"
+ruby "3.3.4"
 
-gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-module-alternative_landing", branch: "main"
-gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
-gem "decidim-goteo_oauth", git: "https://github.com/Platoniq/decidim-module-goteo_oauth", branch: "main"
-gem "decidim-social_crowdfunding", git: "https://github.com/Platoniq/decidim-module-social_crowdfunding", branch: "main"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "master"
+gem "decidim", DECIDIM_VERSION # Usar la última versión estable
+# gem "decidim-conferences", DECIDIM_VERSION
+# gem "decidim-consultations", DECIDIM_VERSION
+# gem "decidim-initiatives", DECIDIM_VERSION
+# gem "decidim-templates", DECIDIM_VERSION
+
+gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-module-alternative_landing"
+# gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
+gem "decidim-goteo_oauth", git: "https://github.com/Platoniq/decidim-module-goteo_oauth", branch: "release/0.30"
+gem "decidim-social_crowdfunding", git: "https://github.com/Platoniq/decidim-module-social_crowdfunding", branch: "deps/decidim-0.30"
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "deps/decidim-0.30"
 
 # ⚠️ MODULES UNDER DEVELOPMENT
 # gem "decidim-peertube", git: "https://github.com/Platoniq/decidim-module-peertube", branch: "main"
@@ -34,7 +36,7 @@ group :development, :test do
   gem "rubocop-faker"
 
   gem "brakeman"
-  gem "decidim-dev", "0.29.4"
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
