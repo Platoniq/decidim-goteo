@@ -1273,15 +1273,15 @@
   resolved "https://registry.npmjs.org/@csstools/utilities/-/utilities-1.0.0.tgz"
   integrity sha512-tAgvZQe/t2mlvpNosA4+CkMiZ2azISW5WPAcdSalZlEjQvUfghHxfQcrCiK/7/CrfAWVxyM88kGFYO82heIGDg==
 
-"@decidim/browserslist-config@^0.30.1":
-  version "0.30.1"
-  resolved "https://registry.npmjs.org/@decidim/browserslist-config/-/browserslist-config-0.30.1.tgz"
-  integrity sha512-SGG9J1G/wmK0XSLg/I3mT0KbYai+6SsJXSdzsfRw7tqFywU/bk9qkERY2Wm6Y9NVewjCKDuov9AUG2TApE1NJg==
+"@decidim/browserslist-config@^0.29.4":
+  version "0.29.4"
+  resolved "https://registry.npmjs.org/@decidim/browserslist-config/-/browserslist-config-0.29.4.tgz"
+  integrity sha512-doro7Qms9ziYPg/wegUT4FE+285AUlWYeYPt5Ot8+awV1HIayZUQvCtUVRxarLil+Jjidc7kRgDB0KuOwrL2hQ==
 
-"@decidim/core@^0.30.1":
-  version "0.30.1"
-  resolved "https://registry.npmjs.org/@decidim/core/-/core-0.30.1.tgz"
-  integrity sha512-ncwMZ60w4ltW4xUf99eSV/pdDDrKt9utVg1IgtJKEA94BqIwvjIqY8oEGpcA1uz67AvqDSSmKv6FU8PHCN+ulA==
+"@decidim/core@^0.29.4":
+  version "0.29.4"
+  resolved "https://registry.npmjs.org/@decidim/core/-/core-0.29.4.tgz"
+  integrity sha512-hgPYHyqjeOcvgT7EnWbjJPYW0g/8GiRUICv8AIdVfHZAH+VAo1t2AYJCiumq2MKoJqGqpIoT/bxc1Rel9wfyOg==
   dependencies:
     "@emoji-mart/data" "^1.1.2"
     "@rails/activestorage" "^7.0.8"
@@ -1317,8 +1317,6 @@
     a11y-accordion-component "^1.2.6"
     a11y-dialog-component "^5.5.1"
     a11y-dropdown-component "^1.2.0"
-    chart.js "^4.4.6"
-    chartkick "^5.0.1"
     classnames "^2.2.5"
     d3 "^7.8.5"
     dayjs "^1.11.0"
@@ -1362,10 +1360,10 @@
     webpack "^5.11.0"
     webpack-cli "^4.2.0"
 
-"@decidim/dev@^0.30.1":
-  version "0.30.1"
-  resolved "https://registry.npmjs.org/@decidim/dev/-/dev-0.30.1.tgz"
-  integrity sha512-X1VihtpKyRn2zmLkzBby94TlQZj4s7CyPdhKF5fHa166LDhKh/l9Pc/8b5Xxvjt2l/G7KbQIfsWCbz85UOpeDA==
+"@decidim/dev@^0.29.4":
+  version "0.29.4"
+  resolved "https://registry.npmjs.org/@decidim/dev/-/dev-0.29.4.tgz"
+  integrity sha512-JI5DX1SAjT9enDrV/JI30yVoOuolX/y5TYwKNHfN9Ott+ews3hCkOd65ncTtFOhaLP48oXqxBeJqyOT808wBmg==
   dependencies:
     "@linthtml/linthtml" "^0.9.6"
     axe-core "^4.7.2"
@@ -1380,20 +1378,20 @@
     "@decidim/voting_schemes-dummy" "0.24.4"
     "@decidim/voting_schemes-electionguard" "0.24.4"
 
-"@decidim/eslint-config@^0.30.1":
-  version "0.30.1"
-  resolved "https://registry.npmjs.org/@decidim/eslint-config/-/eslint-config-0.30.1.tgz"
-  integrity sha512-ZVjRs+5B0mIweOOozdL7G357nySLK6joEhHMyyYGc9RXb1EGo4J95o5HXWrWxLMjF3zoJhIqd0dmNdBCkFnVYQ==
+"@decidim/eslint-config@^0.29.4":
+  version "0.29.4"
+  resolved "https://registry.npmjs.org/@decidim/eslint-config/-/eslint-config-0.29.4.tgz"
+  integrity sha512-zgTHOcxGgxj3IEDK2jtcXBoT08mCh1dVe1RLlWepZBGxjWQOF8OJRG90tOy8GUhpEZ9JpU6crkxRiN2CVbZISg==
 
-"@decidim/prettier-config@^0.30.1":
-  version "0.30.1"
-  resolved "https://registry.npmjs.org/@decidim/prettier-config/-/prettier-config-0.30.1.tgz"
-  integrity sha512-GHSGeK9hgtxpAm23iVHP4z5SKVl+oHUlCX3DXe3bgCtTa+fesu9fzJiMDtCzbleyutCdTCB40uNjXieSeSLEfw==
+"@decidim/prettier-config@^0.29.4":
+  version "0.29.4"
+  resolved "https://registry.npmjs.org/@decidim/prettier-config/-/prettier-config-0.29.4.tgz"
+  integrity sha512-/f0Gj7Pj4zbIzaJPjryRveUep3spG0dNoqeL3JwmYRU0dkZqNafxgnT0ToWnk4xyNjTHIljVORcFIr6tcLpGJg==
 
-"@decidim/stylelint-config@^0.30.1":
-  version "0.30.1"
-  resolved "https://registry.npmjs.org/@decidim/stylelint-config/-/stylelint-config-0.30.1.tgz"
-  integrity sha512-dilg0EBLC/9Lmi6w5GB7QaAsy5zkrrGjvUDlDIAPb/qdwa6bMQ2+Y7EloPuQE/BFTCrA4dpJf9/4Zh8rLAyDtg==
+"@decidim/stylelint-config@^0.29.4":
+  version "0.29.4"
+  resolved "https://registry.npmjs.org/@decidim/stylelint-config/-/stylelint-config-0.29.4.tgz"
+  integrity sha512-KZUlITIOcpzyljypKe3e4yTXz/NW+VuIw/AFnteZWeQPc8sdW+6YxHg22tLr/BkGXtC6sAaUb4sVkpBs/sqyGg==
 
 "@decidim/voting_schemes-dummy@0.24.4":
   version "0.24.4"
@@ -1405,10 +1403,10 @@
   resolved "https://registry.npmjs.org/@decidim/voting_schemes-electionguard/-/voting_schemes-electionguard-0.24.4.tgz"
   integrity sha512-EKTdPKaKIykDtcN/pe0s1HmUuLvan9bEakoDJ9wJNVcYbRtffsb6RaG3LBC6dVPAZYwtem3t0zVHUbIVCCnlCw==
 
-"@decidim/webpacker@^0.30.1":
-  version "0.30.1"
-  resolved "https://registry.npmjs.org/@decidim/webpacker/-/webpacker-0.30.1.tgz"
-  integrity sha512-dBgjHSwNLVLXbMpsRMmMfPSitVh03pL7MVSYVgeFq1E8mltMtToyKklEHe2tZwTUqbdBA0kkvbCjweZ9YwMuxA==
+"@decidim/webpacker@^0.29.4":
+  version "0.29.4"
+  resolved "https://registry.npmjs.org/@decidim/webpacker/-/webpacker-0.29.4.tgz"
+  integrity sha512-2xBMNwvd6iKTLURudOz7lYusfvRWyL46UFmPzYYzIENWJ7D+o9edigj/Pe9iWKj8ANuSxv5bQQgbUTnXeSLNFQ==
   dependencies:
     "@rails/ujs" "^6.1.7"
     "@tailwindcss/typography" "^0.5.2"
@@ -1670,11 +1668,6 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
-
-"@kurkle/color@^0.3.0":
-  version "0.3.4"
-  resolved "https://registry.npmjs.org/@kurkle/color/-/color-0.3.4.tgz"
-  integrity sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.5"
@@ -3509,27 +3502,6 @@ chardet@^0.7.0:
   resolved "https://registry.npmjs.org/chardet/-/chardet-0.7.0.tgz"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
-chart.js@^4.4.6, chart.js@>=2.8.0, chart.js@4:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/chart.js/-/chart.js-4.5.0.tgz"
-  integrity sha512-aYeC/jDgSEx8SHWZvANYMioYMZ2KX02W6f6uVfyteuCGcadDLcYVHdfdygsTQkQ4TKn5lghoojAsPj5pu0SnvQ==
-  dependencies:
-    "@kurkle/color" "^0.3.0"
-
-chartjs-adapter-date-fns@>=3:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/chartjs-adapter-date-fns/-/chartjs-adapter-date-fns-3.0.0.tgz"
-  integrity sha512-Rs3iEB3Q5pJ973J93OBTpnP7qoGwvq3nUnoMdtxO+9aoJof7UFcRbWcIDteXuYd1fgAvct/32T9qaLyLuZVwCg==
-
-chartkick@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.npmjs.org/chartkick/-/chartkick-5.0.1.tgz"
-  integrity sha512-4F3tWI3eBQgnjCYZIZ+fHOaJuNyxeyhDE2Tm+voOWB19hDjSJceys/spzN52DOn8bWepNESGXvPVTGU1jeFsbA==
-  optionalDependencies:
-    chart.js "4"
-    chartjs-adapter-date-fns ">=3"
-    date-fns ">=2"
-
 chokidar@^3.5.3:
   version "3.6.0"
   resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz"
@@ -4197,11 +4169,6 @@ data-view-byte-offset@^1.0.1:
     call-bound "^1.0.2"
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
-
-date-fns@>=2, date-fns@>=2.0.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/date-fns/-/date-fns-4.1.0.tgz"
-  integrity sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==
 
 dayjs@^1.11.0, dayjs@^1.11.6:
   version "1.11.8"
