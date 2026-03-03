@@ -582,11 +582,13 @@ GEM
       net-protocol
     net-protocol (0.2.2)
       timeout
-    net-scp (4.0.0)
+    net-scp (4.1.0)
       net-ssh (>= 2.6.5, < 8.0.0)
+    net-sftp (4.0.0)
+      net-ssh (>= 5.0.0, < 8.0.0)
     net-smtp (0.3.4)
       net-protocol
-    net-ssh (7.0.1)
+    net-ssh (7.3.0)
     nio4r (2.7.4)
     nokogiri (1.16.8)
       mini_portile2 (~> 2.8.2)
@@ -840,9 +842,13 @@ GEM
     spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
       spring (>= 4)
-    sshkit (1.21.4)
+    sshkit (1.25.0)
+      base64
+      logger
       net-scp (>= 1.1.2)
+      net-sftp (>= 2.1.2)
       net-ssh (>= 2.8.0)
+      ostruct
     sshkit-interactive (0.3.0)
       sshkit (~> 1.12)
     stringio (3.1.7)
