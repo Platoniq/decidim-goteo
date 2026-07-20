@@ -19,6 +19,8 @@ gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-
 # ⚠️ MODULES UNDER DEVELOPMENT
 # gem "decidim-peertube", git: "https://github.com/Platoniq/decidim-module-peertube", branch: "main"
 
+gem "appsignal"
+
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 5.0.0"
