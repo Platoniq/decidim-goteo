@@ -14,7 +14,7 @@ gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-mod
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-goteo_oauth", git: "https://github.com/Platoniq/decidim-module-goteo_oauth", branch: "main"
 gem "decidim-social_crowdfunding", git: "https://github.com/Platoniq/decidim-module-social_crowdfunding", branch: "main"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "master"
+gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.29-stable"
 
 # ⚠️ MODULES UNDER DEVELOPMENT
 # gem "decidim-peertube", git: "https://github.com/Platoniq/decidim-module-peertube", branch: "main"
