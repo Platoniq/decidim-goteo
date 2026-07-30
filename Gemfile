@@ -24,6 +24,7 @@ gem "appsignal"
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 5.0.0"
+gem "rack-attack", "~> 6.7"
 
 gem "faker"
 
