@@ -59,7 +59,17 @@ class Rack::Attack
   end
 end
 
-ActiveSupport::Notifications.subscribe("throttle.rack_attack") do |_name, _start, _finish, _id, payload|
-  req = payload[:request]
-  Rails.logger.warn("[rack-attack] throttled #{req.ip} #{req.request_method} #{req.fullpath} UA=#{req.user_agent}")
+%w(throttle blocklist).each do |event|
+  ActiveSupport::Notifications.subscribe("#{event}.rack_attack") do |_name, _start, _finish, _id, payload|
+    req = payload[:request]
+    rule = req.env["rack.attack.matched"]
+
+    Rails.logger.warn(
+      "[rack-attack] #{event} #{rule} #{req.ip} #{req.request_method} #{req.fullpath} UA=#{req.user_agent}"
+    )
+
+    # rubocop:disable Rails/SkipsModelValidations
+    Appsignal.increment_counter("rack_attack", 1, event: event, rule: rule) if defined?(Appsignal)
+    # rubocop:enable Rails/SkipsModelValidations
+  end
 end
