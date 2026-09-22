@@ -68,3 +68,9 @@ public/sw.js.map
 # Backup files
 *.bak
 config/initializers/*.bak
+
+# Generated at build time by Decidim (Decidim::Webpacker::Runner regenerates it
+# before every webpack run, baking in this machine's absolute gem paths).
+# Tracking it only committed one developer's home directory and churned on every
+# other machine. Customise via config/tailwind.config.js.erb instead.
+tailwind.config.js

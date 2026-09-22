@@ -19,6 +19,12 @@ jobs:
         with:
           fetch-depth: 1
 
+      # decidim-stratified_sortitions depends on ruby-cbc, whose native
+      # extension links against libCbcSolver. setup-ruby runs `bundle install`
+      # itself, so the COIN-OR libraries have to be here before it.
+      - name: Install COIN-OR CBC
+        run: sudo apt-get update && sudo apt-get install -y coinor-libcbc-dev
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
