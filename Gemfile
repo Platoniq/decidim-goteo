@@ -59,6 +59,13 @@ group :development do
   gem "capistrano-rails-console"
   gem "capistrano-rbenv"
   gem "capistrano-sidekiq"
+
+  # Capistrano talks SSH through net-ssh, which cannot read ed25519 keys without
+  # these. ed25519 is the default key type for modern ssh-keygen, so without them
+  # `cap production deploy` aborts at rbenv:validate with
+  # "unsupported key type `ssh-ed25519'" before it connects.
+  gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
+  gem "ed25519", ">= 1.2", "< 2.0"
 end
 
 group :production do
