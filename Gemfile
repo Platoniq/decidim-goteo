@@ -14,6 +14,13 @@ gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-mod
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-goteo_oauth", git: "https://github.com/Platoniq/decidim-module-goteo_oauth", branch: "main"
 gem "decidim-social_crowdfunding", git: "https://github.com/Platoniq/decidim-module-social_crowdfunding", branch: "main"
+# Platoniq's fork of gencat/decidim-module-stratified_sortitions, pinned to the
+# last commit on the Decidim 0.29 line. Upstream main has moved to ~> 0.30, which
+# will not resolve against the 0.29.4 above, and gencat's only 0.29 tag (v0.0.1)
+# ships a migration whose class name does not match its file name, so `db:migrate`
+# raises NameError. This commit predates that rename. Pinned rather than tracking
+# a branch so a later fork sync cannot move us onto the 0.30 line.
+gem "decidim-stratified_sortitions", git: "https://github.com/Platoniq/decidim-module-stratified_sortitions", ref: "9c448c1dc1bd829b13aadcc824469581eb8051af"
 gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.29-stable"
 
 # ⚠️ MODULES UNDER DEVELOPMENT
