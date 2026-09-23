@@ -14,3 +14,7 @@
   - [metrics, 1]
   - [exports, 1]
   - [close_meeting_reminder, 1]
+  # decidim-stratified_sortitions puts its sample imports, runs, sample removals
+  # and results exports on its own queue. Without this line the worker never
+  # picks them up and every upload or run waits forever.
+  - [stratified_sortitions, 1]
